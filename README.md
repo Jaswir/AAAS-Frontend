@@ -1,6 +1,9 @@
 # AAAS
 Autistic As A Service
 
+Have business impact
+Side project is a business
+
 * Local Utility
 * Take a slice of a complex problem (Google Search better version => Only Weather vertical, everybody looks up the weather...)
 
@@ -21,5 +24,4 @@ your own product and figure things out
 
 **"There's a lot of low hanging fruits out there, go get them!"**
 
-Have business impact
-Side project is a business
+
