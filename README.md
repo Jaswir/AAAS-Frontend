@@ -4,6 +4,7 @@ Autistic As A Service
 Have business impact
 Side project is a business
 
+* Tools in your toolbox idea, NAS daily, lots of trials, you'll find a hit
 * Solve for their shortcomings (competitors)
 * Local Utility
 * Take a slice of a complex problem (Google Search better version => Only Weather vertical, everybody looks up the weather...)
