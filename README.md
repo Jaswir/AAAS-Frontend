@@ -1,6 +1,9 @@
 # AAAS
 Autistic As A Service
 
+* Local Utility
+* Take a slice of a complex problem (Google Search better version => Only Weather vertical, everybody looks up the weather...)
+
 * Look For Problems
 Work backwards from a problem
 
