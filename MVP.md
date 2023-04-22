@@ -10,7 +10,7 @@ Me feeling bad cause I offended someone =>
 
  “To anyone I have offended, I just want to say I reinvented electric cars and I’m sending people to Mars on a rocket ship. Did you think I was also going to be a chill, normal dude?”
 
- - Elon musk
+ -- Elon musk
 
 # MVP Requirements
 - User opens the Website feels weird and sees a positive quote 
