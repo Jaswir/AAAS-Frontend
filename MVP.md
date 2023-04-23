@@ -13,7 +13,15 @@ Me feeling bad cause I offended someone =>
  -- Elon musk
 
 # MVP Requirements
-- User opens the Website feels weird and sees a positive quote 
-  from an inspiring Autistic person that relates to their situation
+- See 1 Quote on Screen
+- Positive quote from an inspiring Autistic person
+
+# Possible Extensions
+- Ability to search for something e.g. how you feel and then see a quote that relates to your situation. 
+- User opens the Website feels weird and sees an Auti Quote 
+  that relates to their situation
+  
+  
+
 
 
