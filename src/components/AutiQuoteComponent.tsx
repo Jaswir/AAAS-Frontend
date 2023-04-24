@@ -16,7 +16,7 @@ function AutiQuoteComponent() {
     const [quote, setQuote] = useState<AutiQuote>(initialState)
 
     const getQuote = () => {
-        axios.get('http://localhost:5000/api/v1/AutiQuotes/random')
+        axios.get('https://auti-quotes-api.herokuapp.com/api/v1/AutiQuotes/random')
             .then(response => {
                 setQuote((response.data))
 
