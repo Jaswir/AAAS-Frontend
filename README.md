@@ -1,5 +1,5 @@
-# AAAS
-Autistic As A Service
+# AAAS Frontend
+Autistic As A Service, Triple A, S. Frontend
 
 # Getting started
 Frontend : https://auti-quotes.netlify.app/
