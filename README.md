@@ -1,9 +1,13 @@
 # AAAS
 Autistic As A Service
 
-## Frontend : https://auti-quotes.netlify.app/
-## Backend: https://auti-quotes-api.herokuapp.com/swagger/index.html
+# Getting started
+Frontend : https://auti-quotes.netlify.app/
+<br>
+Backend: https://auti-quotes-api.herokuapp.com/swagger/index.html
 
+
+## Don't mind this
 Have business impact
 Side project is a business
 
