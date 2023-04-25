@@ -59,7 +59,7 @@ function AutiQuoteComponent() {
         <>
 
             <div className='flex flex-col items-start justify-center
-                bg-gray-200 px-5 py-3 max-w-[600px]  dark:text-black'>
+                bg-gray-300 px-5 py-3 max-w-[600px]  dark:text-black'>
 
 
                 <h2 className='text-5xl font-bold text-center pb-6'>
@@ -85,7 +85,10 @@ function AutiQuoteComponent() {
 
                 </div>
 
-                <div>
+
+                {/* Quote component */}
+                <div className = ' bg-gray-50 px-5 py-3 max-w-[600px] \
+               text-slate-900'>
                     <p>
                         {quote.quote}
                     </p>
