@@ -33,12 +33,19 @@ function AutiQuoteComponent() {
     const localhost = "http://localhost:5000/"
     var api_url = herokuapp
 
-    //sets api_url depending on Development or Deployment
-    if (process.env.NODE_ENV) api_url = localhost
+    //sets api_url depending on Development or Production
+    if (process.env.NODE_ENV == "development") api_url = localhost
     console.log("Environment: " + process.env.NODE_ENV)
-    console.log("API url: " + api_url)
+    console.log(process.env.NODE_ENV == "development")
 
     const getQuote = (relatable_feeling: string) => {
+
+
+        setQuote(  {
+            "author": "Auti Quote",
+            "quote": "You have just woken up the server, quote will appear shortly",
+            "relatable_Feeling": 100
+          })
 
         var relatable_feeling_underscores = relatable_feeling.replaceAll(' ', '_');
         const inputURL = api_url + 'api/v1/AutiQuotes/random' +
