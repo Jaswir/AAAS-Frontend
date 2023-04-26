@@ -24,7 +24,7 @@ function AutiQuoteComponent() {
         relatable_Feeling: Feeling.Like_I_have_bad_social_skills
     }
 
- 
+
 
 
     const [quote, setQuote] = useState<AutiQuote>(initialState)
@@ -37,15 +37,18 @@ function AutiQuoteComponent() {
     if (process.env.NODE_ENV == "development") api_url = localhost
     console.log("Environment: " + process.env.NODE_ENV)
     console.log(process.env.NODE_ENV == "development")
+    console.log(api_url)
 
     const getQuote = (relatable_feeling: string) => {
 
 
-        setQuote(  {
+        setQuote({
             "author": "Auti Quote",
             "quote": "You have just woken up the server, quote will appear shortly",
             "relatable_Feeling": 100
-          })
+        })
+
+        // sleep(2000)
 
         var relatable_feeling_underscores = relatable_feeling.replaceAll(' ', '_');
         const inputURL = api_url + 'api/v1/AutiQuotes/random' +
