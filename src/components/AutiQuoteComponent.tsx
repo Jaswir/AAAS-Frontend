@@ -24,16 +24,24 @@ function AutiQuoteComponent() {
         relatable_Feeling: Feeling.Like_I_have_bad_social_skills
     }
 
-    const [quote, setQuote] = useState<AutiQuote>(initialState)
+ 
 
+
+    const [quote, setQuote] = useState<AutiQuote>(initialState)
 
     const herokuapp = "https://auti-quotes-api.herokuapp.com/"
     const localhost = "http://localhost:5000/"
+    var api_url = herokuapp
+
+    //sets api_url depending on Development or Deployment
+    if (process.env.NODE_ENV) api_url = localhost
+    console.log("Environment: " + process.env.NODE_ENV)
+    console.log("API url: " + api_url)
 
     const getQuote = (relatable_feeling: string) => {
 
         var relatable_feeling_underscores = relatable_feeling.replaceAll(' ', '_');
-        const inputURL = herokuapp + 'api/v1/AutiQuotes/random' +
+        const inputURL = api_url + 'api/v1/AutiQuotes/random' +
             '/relatable_feeling/' + relatable_feeling_underscores
         // console.log(inputURL)
 
@@ -82,7 +90,7 @@ function AutiQuoteComponent() {
                     <select
                         value={selected} onChange={e => setSelected(e.target.value)}>
                         {Object.keys(Feeling).map((option) =>
-                            (<option>{option}</option>))
+                            (<option key={option}>{option}</option>))
                         }
                     </select>
                 </div>
