@@ -95,7 +95,7 @@ function AutiQuoteComponent() {
 
                     <select
                         value={selected} onChange={e => setSelected(e.target.value)}>
-                        {Object.keys(Feeling).map((option) =>
+                        {Object.values(Feeling).map((option) =>
                             (<option key={option}>{option}</option>))
                         }
                     </select>
