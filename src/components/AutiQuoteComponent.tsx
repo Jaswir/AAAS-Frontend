@@ -33,7 +33,7 @@ function AutiQuoteComponent() {
     const getQuote = (relatable_feeling: string) => {
 
         var relatable_feeling_underscores = relatable_feeling.replaceAll(' ', '_');
-        const inputURL = localhost + 'api/v1/AutiQuotes/random' +
+        const inputURL = herokuapp + 'api/v1/AutiQuotes/random' +
             '/relatable_feeling/' + relatable_feeling_underscores
         // console.log(inputURL)
 
@@ -41,6 +41,7 @@ function AutiQuoteComponent() {
             .then(response => {
                 setQuote((response.data))
 
+                console.log()
                 // console.log(response.data)
 
             }).catch(err => {
