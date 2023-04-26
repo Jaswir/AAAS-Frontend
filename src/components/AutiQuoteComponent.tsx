@@ -5,7 +5,8 @@ function AutiQuoteComponent() {
 
     const Feeling = {
         Like_I_am_not_good_how_I_am: "Like I am not good how I am",
-        Like_I_have_bad_social_skills: "Like I have bad social skills"
+        Like_I_have_bad_social_skills: "Like I have bad social skills",
+        Misunderstood: "Misunderstood",
     } as const
 
     const [selected, setSelected] = useState<string>(Feeling.Like_I_am_not_good_how_I_am)
@@ -32,7 +33,7 @@ function AutiQuoteComponent() {
     const getQuote = (relatable_feeling: string) => {
 
         var relatable_feeling_underscores = relatable_feeling.replaceAll(' ', '_');
-        const inputURL = herokuapp + 'api/v1/AutiQuotes/random' +
+        const inputURL = localhost + 'api/v1/AutiQuotes/random' +
             '/relatable_feeling/' + relatable_feeling_underscores
         // console.log(inputURL)
 
@@ -73,21 +74,21 @@ function AutiQuoteComponent() {
 
                 <div className='py-4'>
 
-                    <label htmlFor="countries" className="block mb-2 text-lg font-bold
-                "> How do you feel?</label>
+                    <label htmlFor="countries" className="block mb-2 text-lg font-bold">
+                        How do you feel?
+                    </label>
 
                     <select
                         value={selected} onChange={e => setSelected(e.target.value)}>
-                        <option>{Feeling.Like_I_am_not_good_how_I_am}</option>
-                        <option>{Feeling.Like_I_have_bad_social_skills}</option>
+                        {Object.keys(Feeling).map((option) =>
+                            (<option>{option}</option>))
+                        }
                     </select>
-
-
                 </div>
 
 
                 {/* Quote component */}
-                <div className = ' bg-gray-50 px-5 py-3 max-w-[600px] \
+                <div className=' bg-gray-50 px-5 py-3 max-w-[600px] \
                text-slate-900'>
                     <p>
                         {quote.quote}
