@@ -6,7 +6,6 @@ function FeelingDropDown({selected, setSelected, Feeling}: {
 
 
     return (
-
         <div className='py-4'>
 
             <label className="block mb-2 text-lg font-bold">
@@ -20,8 +19,6 @@ function FeelingDropDown({selected, setSelected, Feeling}: {
                 }
             </select>
         </div>
-
-
     )
 
 

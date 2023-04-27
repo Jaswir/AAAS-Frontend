@@ -9,19 +9,11 @@ function App() {
 
 
   return (
-
-    <>
-      <div className="h-screen flex flex-col  justify-center items-center">
-
-        <AutiQuoteCard />
-        <CallToAction/>
-
-      </div >
-
-    </>
-
-
-
+    
+    <div className="h-screen flex flex-col  justify-center items-center">
+      <AutiQuoteCard />
+      <CallToAction />
+    </div >
 
   )
 

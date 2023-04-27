@@ -1,7 +1,7 @@
 import React from "react";
 import { AutiQuote } from "../Interfaces/AutiQuote";
 
-function QuoteBox({quote} : {quote : AutiQuote}) {
+function QuoteBox({ quote }: { quote: AutiQuote }) {
 
     return (
         <div className=' bg-gray-50 px-5 py-3 max-w-[600px] \
@@ -13,7 +13,8 @@ function QuoteBox({quote} : {quote : AutiQuote}) {
             <p>
                 - {quote.author}
             </p>
-        </div>);
+        </div>
+    );
 
 }
 
