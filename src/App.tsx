@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import AutiQuoteComponent from './components/AutiQuoteComponent';
+import AutiQuoteCard from './components/AutiQuoteCard';
 import CallToAction from './components/CallToAction';
 
 
@@ -13,7 +13,7 @@ function App() {
     <>
       <div className="h-screen flex flex-col  justify-center items-center">
 
-        <AutiQuoteComponent />
+        <AutiQuoteCard />
         <CallToAction/>
 
       </div >

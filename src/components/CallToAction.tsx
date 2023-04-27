@@ -3,7 +3,6 @@ import axios from 'axios';
 
 function CallToAction() {
 
-
     return (
 
         <div className='flex flex-col items-start justify-center
