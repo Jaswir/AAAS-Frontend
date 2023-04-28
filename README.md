@@ -14,7 +14,7 @@ Assuming you have nodejs and npm installed on your system, please install app de
 $ npm install
 ```
 
-# Run app 
+## Run app 
 
 Runs the app in the development mode. Excute the below in the root folder of the project.
 
