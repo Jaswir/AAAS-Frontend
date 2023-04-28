@@ -1,11 +1,12 @@
 # AAAS Frontend
 Autistic As A Service, Triple A, S. Frontend
 
-# Getting started
+# Getting started: Links
 Frontend : https://auti-quotes.netlify.app/
 <br>
 Backend: https://auti-quotes-api.herokuapp.com/swagger/index.html
 
+# Gettings started: Locally
 ## Installation
 
 Assuming you have nodejs and npm installed on your system, please install app dependencies as below in root folder of project.
