@@ -8,7 +8,7 @@ $ npm install
 
 ## Run app 
 
-Runs the app in the development mode. Excute the below in the root folder of the project.
+Runs the app in the development mode. Excute as below in the root folder of the project.
 
 ```bash
 $ npm run dev
