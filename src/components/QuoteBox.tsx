@@ -1,9 +1,8 @@
-import React from "react";
-import { AutiQuote } from "../Interfaces/AutiQuote";
+import React from 'react'
+import { type AutiQuote } from '../Interfaces/AutiQuote'
 
-function QuoteBox({ quote }: { quote: AutiQuote }) {
-
-    return (
+function QuoteBox ({ quote }: { quote: AutiQuote }): JSX.Element {
+  return (
         <div className=' bg-gray-50 px-5 py-3 max-w-[600px] \
                text-slate-900'>
             <p>
@@ -14,9 +13,7 @@ function QuoteBox({ quote }: { quote: AutiQuote }) {
                 - {quote.author}
             </p>
         </div>
-    );
-
+  )
 }
 
 export default QuoteBox
-
