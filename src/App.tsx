@@ -1,5 +1,4 @@
 
-import { useState } from 'react'
 import AutiQuoteCard from './components/AutiQuoteCard'
 import CallToAction from './components/CallToAction'
 
