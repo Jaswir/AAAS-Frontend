@@ -1,6 +1,6 @@
 ## Installation
 
-Assuming you have nodejs and npm installed on your system, please install app dependencies as below in root folder of project.
+Assuming you have nodejs and npm installed on your system, please install app dependencies as below in the root folder of the project.
 
 ```bash
 $ npm install
