@@ -1,4 +1,4 @@
-# AAAS Frontend
+# AAAS Frontend for AutiQuote App
 Autistic As A Service, Triple A, S. Frontend of AutiQuote
 
 ![Screenshot 2023-04-29 112424_Mark_Zuckerberg](https://user-images.githubusercontent.com/15957528/235295421-1ae70875-0052-44f4-86d4-50943571a838.png)
