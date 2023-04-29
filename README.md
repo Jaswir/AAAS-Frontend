@@ -28,7 +28,11 @@ Open [http://localhost:5173](http://localhost:5173/) to view it in your browser.
 The page will reload when you make changes.
 
 
-## Don't mind this
+# Best-Practices
+
+* Eslint : Included Eslint for linting to check syntax and find problems and enforce code style 
+
+## Ignore this 
 Have business impact
 Side project is a business
 
