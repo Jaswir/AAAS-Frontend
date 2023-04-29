@@ -30,7 +30,8 @@ The page will reload when you make changes.
 
 # Best-Practices
 
-* Eslint : Included Eslint for linting to check syntax and find problems and enforce code style 
+* Eslint linting for watching the quality of the code and the best practices. 
+
 
 ## Ignore this 
 Have business impact
