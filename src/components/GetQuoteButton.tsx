@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React from 'react'
-import { type AutiQuote } from '../Interfaces/AutiQuote'
+import { type AutiQuote } from '../models/Interfaces/AutiQuote'
 
 function GetQuoteButton ({ selected, setQuote }:
 { selected: string, setQuote: (param: AutiQuote) => void }): JSX.Element {

@@ -1,9 +1,9 @@
+import { FeelingModel } from '../models/feelingModel'
 
-function FeelingDropDown ({ selected, setSelected, Feeling }:
+function FeelingDropDown ({ selected, setSelected }:
 {
   selected: string
   setSelected: (param: string) => void
-  Feeling: object
 }): JSX.Element {
   return (
         <div className='py-4'>
@@ -14,7 +14,7 @@ function FeelingDropDown ({ selected, setSelected, Feeling }:
 
             <select
                 value={selected} onChange={e => { setSelected(e.target.value) }}>
-                {Object.values(Feeling).map((option) =>
+                {Object.values(FeelingModel).map((option) =>
                   (<option key={option}>{option}</option>))
                 }
             </select>

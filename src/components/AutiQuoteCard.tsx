@@ -2,24 +2,19 @@ import { useState } from 'react'
 import FeelingDropDown from './FeelingDropDown'
 import QuoteHeader from './QuoteHeader'
 import QuoteSubHeader from './QuoteSubHeader'
-import { type AutiQuote } from '../Interfaces/AutiQuote'
+import { type AutiQuote } from '../models/Interfaces/AutiQuote'
 import QuoteBox from './QuoteBox'
 import GetQuoteButton from './GetQuoteButton'
+import { FeelingModel } from '../models/feelingModel'
 
 function AutiQuoteComponent (): JSX.Element {
-  const Feeling = {
-    Like_I_am_not_good_how_I_am: 'Like I am not good how I am',
-    Like_I_have_bad_social_skills: 'Like I have bad social skills',
-    Misunderstood: 'Misunderstood'
-  } as const
-
   const initialState: AutiQuote = {
     author: '',
     quote: '',
-    relatable_Feeling: Feeling.Like_I_have_bad_social_skills
+    relatable_Feeling: FeelingModel.Like_I_have_bad_social_skills
   }
 
-  const [selected, setSelected] = useState<string>(Feeling.Like_I_am_not_good_how_I_am)
+  const [selected, setSelected] = useState<string>(FeelingModel.Like_I_am_not_good_how_I_am)
   const [quote, setQuote] = useState<AutiQuote>(initialState)
 
   // Only triggers when component mounts
@@ -35,8 +30,7 @@ function AutiQuoteComponent (): JSX.Element {
             <QuoteHeader />
             <QuoteSubHeader />
 
-            <FeelingDropDown selected={selected} setSelected={setSelected}
-                Feeling={Feeling} />
+            <FeelingDropDown selected={selected} setSelected={setSelected}/>
 
             <QuoteBox quote={quote} />
 

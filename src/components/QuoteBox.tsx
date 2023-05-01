@@ -1,5 +1,5 @@
 import React from 'react'
-import { type AutiQuote } from '../Interfaces/AutiQuote'
+import { type AutiQuote } from '../models/Interfaces/AutiQuote'
 
 function QuoteBox ({ quote }: { quote: AutiQuote }): JSX.Element {
   return (
