@@ -5,10 +5,10 @@ import { type AutiQuote } from '../models/Interfaces/AutiQuote'
 function GetQuoteButton ({ selected, setQuote }:
 { selected: string, setQuote: (param: AutiQuote) => void }): JSX.Element {
   // Sets api_url depending on Development or Production
-  const herokuapp = 'https://auti-quotes-api.herokuapp.com/'
+  const herokuapp = 'https://auti-quotes-api-d951bd477310.herokuapp.com/'
   const localhost = 'http://localhost:5000/'
   let apiUrl = herokuapp
-  if (process.env.NODE_ENV === 'development') apiUrl = localhost
+  // if (process.env.NODE_ENV === 'development') apiUrl = localhost
 
   const getQuote = (relatableFeeling: string): void => {
     setQuote({

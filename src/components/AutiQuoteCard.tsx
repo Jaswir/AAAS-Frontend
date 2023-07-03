@@ -5,7 +5,7 @@ import QuoteSubHeader from './QuoteSubHeader'
 import { type AutiQuote } from '../models/Interfaces/AutiQuote'
 import QuoteBox from './QuoteBox'
 import GetQuoteButton from './GetQuoteButton'
-import { FeelingModel } from '../models/feelingModel'
+import { FeelingModel } from '../models/FeelingModel'
 
 function AutiQuoteComponent (): JSX.Element {
   const initialState: AutiQuote = {
