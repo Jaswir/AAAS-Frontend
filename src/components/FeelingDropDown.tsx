@@ -1,4 +1,4 @@
-import { FeelingModel } from '../models/feelingModel'
+import { FeelingModel } from '../models/FeelingModel'
 
 function FeelingDropDown ({ selected, setSelected }:
 {
