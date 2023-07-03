@@ -8,7 +8,7 @@ function GetQuoteButton ({ selected, setQuote }:
   const herokuapp = 'https://auti-quotes-api-d951bd477310.herokuapp.com/'
   const localhost = 'http://localhost:5000/'
   let apiUrl = herokuapp
-  // if (process.env.NODE_ENV === 'development') apiUrl = localhost
+  if (process.env.NODE_ENV === 'development') apiUrl = localhost
 
   const getQuote = (relatableFeeling: string): void => {
     setQuote({
